@@ -1,0 +1,135 @@
+/* Basic Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffe6f7;
+    overflow-x: hidden;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Message */
+.message h1 {
+    font-size: 2rem;
+    color: #ff0066;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#yesBtn {
+    background-color: #ff66b2;
+    color: white;
+}
+
+#noBtn {
+    background-color: #ffcccc;
+    color: white;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+/* Animation Section */
+.hidden {
+    display: none;
+}
+
+#animation {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.hearts {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('tenor.gif') no-repeat center;
+    background-size: contain;
+}
+
+.butterflies {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('tenor.gif') no-repeat center;
+    background-size: contain;
+}
+
+/* Swiper Gallery */
+.swiper-container {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Custom Animation for the Slide Effect */
+.swiper-wrapper {
+    display: flex;
+    transition-timing-function: ease-out;
+    transition: transform 0.8s cubic-bezier(0.17, 0.67, 0.83, 0.67); /* Custom flip effect */
+}
+
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease-in-out;
+}
+
+/* New Flip Effect for Swiping */
+.swiper-slide {
+    transform: rotateY(0);
+    transition: transform 0.6s ease;
+}
+
+.swiper-slide-next {
+    transform: rotateY(90deg); /* Flip to the right */
+}
+
+.swiper-slide-prev {
+    transform: rotateY(-90deg); /* Flip to the left */
+}
+
+.swiper-slide-active {
+    transform: rotateY(0deg); /* Back to normal */
+}
+
+/* Removing Arrows and Pagination */
+.swiper-button-next, .swiper-button-prev, .swiper-pagination {
+    display: none;
+}
+
+/* Poem Section */
+.poem {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #ff0066;
+    padding: 20px;
+    background-color: #fff0f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
